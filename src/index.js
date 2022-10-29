@@ -77,6 +77,7 @@ bot.on('message', async (json, position) => {
 })
 
 bot.on('playerJoined', async (player) => {
+    if (bot.player.username !== 'Mafuyuz') return;
     try {
         const { uuid, username } = player
         const result = await uuids.findOne({ uuid })
