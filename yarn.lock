@@ -125,12 +125,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bson@npm:^4.7.0":
-  version: 4.7.0
-  resolution: "bson@npm:4.7.0"
-  dependencies:
-    buffer: ^5.6.0
-  checksum: 83e7b64afdad5a505073a7e6206e7b345f59e7888fbcb1948fba72b6101a1baf58b7499314f8e24b650567665f7973eda048aabbb1ddcfbadfba7d6c6b0f5e83
+"bson@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "bson@npm:5.0.0"
+  checksum: d494ed47169b1d9d9cd1901cbb7080a83983ccda0df9109268602b007455d9fbbc0d3e514b8491d3cc5b7fe839ff46b001fd154318f2f6aa76ce9c9340e3b13b
   languageName: node
   linkType: hard
 
@@ -145,16 +143,6 @@ __metadata:
   version: 1.0.1
   resolution: "buffer-equal@npm:1.0.1"
   checksum: 6ead0f976726c4e2fb6f2e82419983f4a99cbf2cca1f1e107e16c23c4d91d9046c732dd29b63fc6ac194354f74fa107e8e94946ef2527812d83cde1d5a006309
-  languageName: node
-  linkType: hard
-
-"buffer@npm:^5.6.0":
-  version: 5.7.1
-  resolution: "buffer@npm:5.7.1"
-  dependencies:
-    base64-js: ^1.3.1
-    ieee754: ^1.1.13
-  checksum: e2cf8429e1c4c7b8cbd30834ac09bd61da46ce35f5c22a78e6c2f04497d6d25541b16881e30a019c6fd3154150650ccee27a308eff3e26229d788bbdeb08ab84
   languageName: node
   linkType: hard
 
@@ -184,13 +172,6 @@ __metadata:
     supports-color:
       optional: true
   checksum: 3dbad3f94ea64f34431a9cbf0bafb61853eda57bff2880036153438f50fb5a84f27683ba0d8e5426bf41a8c6ff03879488120cf5b3a761e77953169c0600a708
-  languageName: node
-  linkType: hard
-
-"denque@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "denque@npm:2.1.0"
-  checksum: 1d4ae1d05e59ac3a3481e7b478293f4b4c813819342273f3d5b826c7ffa9753c520919ba264f377e09108d24ec6cf0ec0ac729a5686cbb8f32d797126c5dae74
   languageName: node
   linkType: hard
 
@@ -230,7 +211,7 @@ __metadata:
   dependencies:
     dotenv: ^16.0.3
     mineflayer: ^4.5.0
-    mongodb: ^4.10.0
+    mongodb: ^5.0.0
     node-fetch: 2.6.8
   languageName: unknown
   linkType: soft
@@ -273,7 +254,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ieee754@npm:^1.1.13, ieee754@npm:^1.2.1":
+"ieee754@npm:^1.2.1":
   version: 1.2.1
   resolution: "ieee754@npm:1.2.1"
   checksum: 5144c0c9815e54ada181d80a0b810221a253562422e7c6c3a60b1901154184f49326ec239d618c416c1c5945a2e197107aee8d986a3dd836b53dffefd99b5e7e
@@ -504,29 +485,39 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mongodb-connection-string-url@npm:^2.5.3":
-  version: 2.5.4
-  resolution: "mongodb-connection-string-url@npm:2.5.4"
+"mongodb-connection-string-url@npm:^2.6.0":
+  version: 2.6.0
+  resolution: "mongodb-connection-string-url@npm:2.6.0"
   dependencies:
     "@types/whatwg-url": ^8.2.1
     whatwg-url: ^11.0.0
-  checksum: 9f431826b229488808e4a8a9e6bdde0162be3e6d5cad40867b69b2199ce009f568b67dc1bf587a43367904d8184f1c68689f7ea6574ed40b396726abde9485e1
+  checksum: 1d662f0ecfe96f7a400f625c244b2e52914c98f3562ee7d19941127578b5f8237624433bdcea285a654041b945b518803512989690c74548aec5860c5541c605
   languageName: node
   linkType: hard
 
-"mongodb@npm:^4.10.0":
-  version: 4.10.0
-  resolution: "mongodb@npm:4.10.0"
+"mongodb@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "mongodb@npm:5.0.0"
   dependencies:
-    bson: ^4.7.0
-    denque: ^2.1.0
-    mongodb-connection-string-url: ^2.5.3
+    bson: ^5.0.0
+    mongodb-connection-string-url: ^2.6.0
     saslprep: ^1.0.3
-    socks: ^2.7.0
+    socks: ^2.7.1
+  peerDependencies:
+    "@aws-sdk/credential-providers": ^3.201.0
+    mongodb-client-encryption: ^2.3.0
+    snappy: ^7.2.2
   dependenciesMeta:
     saslprep:
       optional: true
-  checksum: 4847fe69b6d3baddc440936d306b4d00fa40a1dafabd387f9fb6f3ecd63b27c41f11b2cc46774ac2bf17e9b508d35908ebe21f47badf3449fb7afcbde2733951
+  peerDependenciesMeta:
+    "@aws-sdk/credential-providers":
+      optional: true
+    mongodb-client-encryption:
+      optional: true
+    snappy:
+      optional: true
+  checksum: e0beeba7c74dcce3cf7383c2597b8239cf1c5d7a1a46959ca86973bd3ed51f71e85238ea8c043dc9d06606554f29c3e2693876a8b6695f32f2808d328af3cb57
   languageName: node
   linkType: hard
 
@@ -850,7 +841,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"socks@npm:^2.7.0":
+"socks@npm:^2.7.1":
   version: 2.7.1
   resolution: "socks@npm:2.7.1"
   dependencies:
