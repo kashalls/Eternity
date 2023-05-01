@@ -1,6 +1,6 @@
 {
   "name": "eternity",
-  "packageManager": "yarn@3.5.0",
+  "packageManager": "yarn@3.5.1",
   "type": "commonjs",
   "dependencies": {
     "dotenv": "^16.0.3",
