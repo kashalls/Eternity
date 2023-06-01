@@ -125,10 +125,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bson@npm:^5.2.0":
-  version: 5.2.0
-  resolution: "bson@npm:5.2.0"
-  checksum: 1297f8776a05fe3c03b5a1c73210389bc3e596ee6f1e772b76c021fff5537d0c91e523462ba196a8a839246613a87cffbd6486d387a849c7de7cde64d1af7812
+"bson@npm:^5.3.0":
+  version: 5.3.0
+  resolution: "bson@npm:5.3.0"
+  checksum: c1e57630fea6b82ad8bc0fb83fd8f16a2620a836ab69f6b9433250cd19704c0c8995681a3bfab9f967eae30512f0c8ee921d42ace4c1781726600c4a367593cf
   languageName: node
   linkType: hard
 
@@ -182,7 +182,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dotenv@npm:^16.1.3":
+"dotenv@npm:^16.0.3":
   version: 16.1.3
   resolution: "dotenv@npm:16.1.3"
   checksum: 8f73bae720161cf365b679de162fe79a05f5b7a21d0d2b8bf9fb0601a2ed30f7e9dc49fa8b752d93206e4b7d427eccea2f383a1622cd5da4a1824f43bf8f780b
@@ -209,9 +209,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "eternity@workspace:."
   dependencies:
-    dotenv: ^16.1.3
+    dotenv: ^16.0.3
     mineflayer: ^4.5.0
-    mongodb: ^5.0.0
+    mongodb: ^5.6.0
     node-fetch: 2.6.11
   languageName: unknown
   linkType: soft
@@ -457,11 +457,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mongodb@npm:^5.0.0":
-  version: 5.4.0
-  resolution: "mongodb@npm:5.4.0"
+"mongodb@npm:^5.6.0":
+  version: 5.6.0
+  resolution: "mongodb@npm:5.6.0"
   dependencies:
-    bson: ^5.2.0
+    bson: ^5.3.0
     mongodb-connection-string-url: ^2.6.0
     saslprep: ^1.0.3
     socks: ^2.7.1
@@ -479,7 +479,7 @@ __metadata:
       optional: true
     snappy:
       optional: true
-  checksum: f0e0f5559186d041f93ddb94d2e7276240b03936da2d043cc76c3d541e1242ddb62b1f105d5033867819592be2dad27e178d875d1ed0c567f5785c275d996869
+  checksum: 5b1594b24795b2a7824095a917ede2fc37aaef31e60320c833ee9b11cc2f3de9dd87d5afacea2e41eb5eb579ac9780f5bc4b0bb11d3b1be78e8bf0014528192a
   languageName: node
   linkType: hard
 
