@@ -6,6 +6,6 @@
     "dotenv": "^16.0.3",
     "mineflayer": "^4.5.0",
     "mongodb": "^5.0.0",
-    "node-fetch": "2.6.12"
+    "node-fetch": "3.3.2"
   }
 }
