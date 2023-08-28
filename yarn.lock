@@ -23,6 +23,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@mongodb-js/saslprep@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "@mongodb-js/saslprep@npm:1.1.0"
+  dependencies:
+    sparse-bitfield: ^3.0.3
+  checksum: 1479a43e216734672f8eb1a2a55165b6896841bd00fb5bd645390a24374ef6c29f0f6d19a43618a19b8f1912fcbd2b2cc2210a62361103d1f28dce6852cf31d4
+  languageName: node
+  linkType: hard
+
 "@types/node@npm:*":
   version: 18.11.0
   resolution: "@types/node@npm:18.11.0"
@@ -125,10 +134,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bson@npm:^5.3.0":
-  version: 5.3.0
-  resolution: "bson@npm:5.3.0"
-  checksum: c1e57630fea6b82ad8bc0fb83fd8f16a2620a836ab69f6b9433250cd19704c0c8995681a3bfab9f967eae30512f0c8ee921d42ace4c1781726600c4a367593cf
+"bson@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "bson@npm:6.0.0"
+  checksum: 594ebbfcaef8487741405915977b5d38dcd6e36b08af54faf459a8e8d039d555a2db2bb422c8d25b065ac9b5bb9828bc8cc49aa145194f53f8352d355fd83a77
   languageName: node
   linkType: hard
 
@@ -210,8 +219,8 @@ __metadata:
   resolution: "eternity@workspace:."
   dependencies:
     dotenv: ^16.0.3
-    mineflayer: ^4.10.0
-    mongodb: ^5.0.0
+    mineflayer: ^4.5.0
+    mongodb: ^6.0.0
     node-fetch: 2.6.12
   languageName: unknown
   linkType: soft
@@ -265,13 +274,6 @@ __metadata:
   version: 2.0.4
   resolution: "inherits@npm:2.0.4"
   checksum: 4a48a733847879d6cf6691860a6b1e3f0f4754176e4d71494c41f3475553768b10f84b5ce1d40fbd0e34e6bfbb864ee35858ad4dd2cf31e02fc4a154b724d7f1
-  languageName: node
-  linkType: hard
-
-"ip@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "ip@npm:2.0.0"
-  checksum: cfcfac6b873b701996d71ec82a7dd27ba92450afdb421e356f44044ed688df04567344c36cbacea7d01b1c39a4c732dc012570ebe9bebfb06f27314bca625349
   languageName: node
   linkType: hard
 
@@ -413,7 +415,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mineflayer@npm:^4.10.0":
+"mineflayer@npm:^4.5.0":
   version: 4.10.0
   resolution: "mineflayer@npm:4.10.0"
   dependencies:
@@ -457,29 +459,37 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mongodb@npm:^5.0.0":
-  version: 5.6.0
-  resolution: "mongodb@npm:5.6.0"
+"mongodb@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "mongodb@npm:6.0.0"
   dependencies:
-    bson: ^5.3.0
+    "@mongodb-js/saslprep": ^1.1.0
+    bson: ^6.0.0
     mongodb-connection-string-url: ^2.6.0
-    saslprep: ^1.0.3
-    socks: ^2.7.1
   peerDependencies:
-    "@aws-sdk/credential-providers": ^3.201.0
-    mongodb-client-encryption: ">=2.3.0 <3"
+    "@aws-sdk/credential-providers": ^3.188.0
+    "@mongodb-js/zstd": ^1.1.0
+    gcp-metadata: ^5.2.0
+    kerberos: ^2.0.1
+    mongodb-client-encryption: ">=6.0.0 <7"
     snappy: ^7.2.2
-  dependenciesMeta:
-    saslprep:
-      optional: true
+    socks: ^2.7.1
   peerDependenciesMeta:
     "@aws-sdk/credential-providers":
+      optional: true
+    "@mongodb-js/zstd":
+      optional: true
+    gcp-metadata:
+      optional: true
+    kerberos:
       optional: true
     mongodb-client-encryption:
       optional: true
     snappy:
       optional: true
-  checksum: 5b1594b24795b2a7824095a917ede2fc37aaef31e60320c833ee9b11cc2f3de9dd87d5afacea2e41eb5eb579ac9780f5bc4b0bb11d3b1be78e8bf0014528192a
+    socks:
+      optional: true
+  checksum: 0399d1297795eb8b7bc20c2038085a6928fbd43931d831cd4ef00d8d63a55c8e867d5dfa36859fe69a86ae84fd36d9e5fb9eec1411d351cf653a82894c4751d0
   languageName: node
   linkType: hard
 
@@ -796,15 +806,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"saslprep@npm:^1.0.3":
-  version: 1.0.3
-  resolution: "saslprep@npm:1.0.3"
-  dependencies:
-    sparse-bitfield: ^3.0.3
-  checksum: 4fdc0b70fb5e523f977de405e12cca111f1f10dd68a0cfae0ca52c1a7919a94d1556598ba2d35f447655c3b32879846c77f9274c90806f6673248ae3cea6ee43
-  languageName: node
-  linkType: hard
-
 "semver@npm:^7.3.8":
   version: 7.5.3
   resolution: "semver@npm:7.5.3"
@@ -816,20 +817,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"smart-buffer@npm:^4.1.0, smart-buffer@npm:^4.2.0":
+"smart-buffer@npm:^4.1.0":
   version: 4.2.0
   resolution: "smart-buffer@npm:4.2.0"
   checksum: b5167a7142c1da704c0e3af85c402002b597081dd9575031a90b4f229ca5678e9a36e8a374f1814c8156a725d17008ae3bde63b92f9cfd132526379e580bec8b
-  languageName: node
-  linkType: hard
-
-"socks@npm:^2.7.1":
-  version: 2.7.1
-  resolution: "socks@npm:2.7.1"
-  dependencies:
-    ip: ^2.0.0
-    smart-buffer: ^4.2.0
-  checksum: 259d9e3e8e1c9809a7f5c32238c3d4d2a36b39b83851d0f573bfde5f21c4b1288417ce1af06af1452569cd1eb0841169afd4998f0e04ba04656f6b7f0e46d748
   languageName: node
   linkType: hard
 
