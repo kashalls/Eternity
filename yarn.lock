@@ -182,10 +182,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dotenv@npm:^16.0.3":
-  version: 16.1.4
-  resolution: "dotenv@npm:16.1.4"
-  checksum: c1b2e13df4d374a6a29e134c56c7b040ba20500677fe8b9939ea654f3b3badb9aaa0b172e40e4dfa1233a4177dbb8fb79d84cc79a50ac9c9641fe2ad98c14876
+"dotenv@npm:^16.4.5":
+  version: 16.4.5
+  resolution: "dotenv@npm:16.4.5"
+  checksum: 301a12c3d44fd49888b74eb9ccf9f07a1f5df43f489e7fcb89647a2edcd84c42d6bc349dc8df099cd18f07c35c7b04685c1a4f3e6a6a9e6b30f8d48c15b7f49c
   languageName: node
   linkType: hard
 
@@ -209,8 +209,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "eternity@workspace:."
   dependencies:
-    dotenv: ^16.0.3
-    mineflayer: ^4.10.0
+    dotenv: ^16.4.5
+    mineflayer: ^4.5.0
     mongodb: ^5.0.0
     node-fetch: 2.6.12
   languageName: unknown
@@ -413,7 +413,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mineflayer@npm:^4.10.0":
+"mineflayer@npm:^4.5.0":
   version: 4.10.0
   resolution: "mineflayer@npm:4.10.0"
   dependencies:
