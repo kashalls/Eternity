@@ -210,7 +210,7 @@ __metadata:
   resolution: "eternity@workspace:."
   dependencies:
     dotenv: ^16.0.3
-    mineflayer: ^4.10.0
+    mineflayer: ^4.5.0
     mongodb: ^5.0.0
     node-fetch: 2.6.12
   languageName: unknown
@@ -413,7 +413,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mineflayer@npm:^4.10.0":
+"mineflayer@npm:^4.5.0":
   version: 4.10.0
   resolution: "mineflayer@npm:4.10.0"
   dependencies:
